@@ -1,0 +1,132 @@
+body {
+    background-image:url(https://img.freepik.com/vector-gratis/fondo-azul-degradado_23-2149337038.jpg);
+    margin: auto;
+    max-width: 1000px;
+}
+header {
+    width:100%;
+    display: flex;
+    background: linear-gradient(400deg,slategrey, darkblue);
+}
+.nav {
+    width: 35%;
+    background-color: black;
+    text-align: center;
+}
+.nav ,ul ,li {
+    margin-right: 30px;
+    margin-bottom: 50px;
+
+}
+.cabecera .perfil img {
+    width: 150px;
+    border-radius: 50%;
+}
+.cabecera .perfil {
+    padding: 5px;
+    margin-left: 40px;
+}
+.nombre {
+    margin: auto;
+}
+.main {
+    background: linear-gradient(205deg, darkblue,black);
+    display: flex;
+}
+.informacion{
+    color:white;
+}
+.etiqueta {
+margin: 20px;
+}
+/*inicio de animacion de boton*/
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  /*fin de animacion de boton*/
+  /**:not(:last-child)   =excluye a los ultimos elementos secundarios(div internos)de cada div principal de la seleccion*/
+  /*inicio de animacion de hablidilades*/
+  .skills:not(:last-child) {
+    margin-bottom: 30px;
+  }
+.detalles{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.menu{
+    position:relative;
+    border: 1px solid cyan;
+    border-radius: 20px;
+}
+.menu div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: cyan;
+}
+/*forwards  =el elemento conservara los valores del estilo establecidos por el ultimo fotograma clave*/
+#html-m1{
+    animation: html-barra 2s forwards;
+}
+@keyframes html-barra {
+    100%{
+        width: 90%;
+    }
+}
+#css-m1{
+    animation: css-barra 2s forwards;
+}
+@keyframes css-barra {
+    100%{
+        width: 60%;
+    }
+}
+#js-m1{
+    animation: js-barra 2s forwards;
+}
+@keyframes js-barra {
+    100%{
+        width: 30%;
+    }
+}
+#equipo-m1{
+    animation: equipo-barra 2s forwards;
+}
+@keyframes equipo-barra {
+    100%{
+        width: 70%;
+    }
+}
+#liderazgo-m1{
+    animation: liderazgo-barra 2s forwards;
+}
+@keyframes liderazgo-barra {
+    100%{
+        width: 20%;
+    }
+}
+/*fin de la animacion de habilidaes*/
